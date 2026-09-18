@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>坦克大战 · 在线试玩 | 朱子康的作品集</title>
+<meta name="description" content="纯原生 JavaScript + Canvas 单文件实现的坦克大战网页游戏：坦克选择与进化、成就系统、随机事件、关卡模式与无尽模式，支持在线试玩。">
+<meta name="theme-color" content="#F1F1EB">
+<link rel="canonical" href="https://qsefthuko753951.github.io/ZK/games.html">
+<link rel="icon" href="images/favicon.png" sizes="256x256">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<meta property="og:type" content="website">
+<meta property="og:title" content="坦克大战 · 在线试玩">
+<meta property="og:description" content="原生 JS + Canvas 单文件游戏，无需下载即点即玩。">
+<meta property="og:url" content="https://qsefthuko753951.github.io/ZK/games.html">
+<meta property="og:image" content="https://qsefthuko753951.github.io/ZK/images/robocon-01.webp">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>(function(){ try { var t = localStorage.getItem('zk-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();</script>
+</head>
+<body>
+
+<header class="site-nav">
+    <div class="nav-inner">
+        <a class="nav-brand" href="index.html"><span class="seal">朱</span>朱子康</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="打开导航菜单">☰</button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">首页</a>
+            <a href="about.html">关于</a>
+            <a href="skills.html">技能</a>
+            <a href="projects.html">项目</a>
+            <a href="games.html" class="is-active">游戏</a>
+            <a href="contact.html">联系</a>
+        </nav>
+        <button class="theme-toggle" aria-label="切换深色 / 浅色模式" title="切换主题">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+        </button>
+    </div>
+</header>
+
+<main class="site-main">
+    <div class="page-head container">
+        <div class="eyebrow">GAMES // 互动作品</div>
+        <h1>坦克大战</h1>
+        <p>纯原生 JavaScript + Canvas 写成的单文件网页游戏，没有引擎、没有依赖，一个 HTML 就是全部。</p>
+    </div>
+
+    <section class="section" style="padding-top:0">
+        <div class="container">
+            <div class="play-cabinet reveal">
+                <div class="play-head">
+                    <div class="eyebrow">互动展品 01</div>
+                    <h2>《坦克大战》网页版 · 即点即玩</h2>
+                </div>
+                <div class="play-stage">
+                    <div class="play-poster" id="play-poster" onclick="startGame()" role="button" tabindex="0">
+                        <div class="play-badge-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></div>
+                        <h3>坦 克 大 战</h3>
+                        <p>坦克选择与进化、成就系统、随机事件、关卡模式与无尽模式（含商店）。方向键移动，空格开火——看看你能撑到第几关。</p>
+                        <div class="keys">↑ ↓ ← → 移动 &nbsp;/&nbsp; SPACE 开火 &nbsp;/&nbsp; 支持全屏</div>
+                    </div>
+                    <div class="frame-wrap" id="frame-wrap" hidden>
+                        <div class="frame-scaler" id="frame-scaler">
+                            <iframe id="game-frame" title="坦克大战在线试玩" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="play-tools">
+                    <span class="meta">单文件 123 KB · 零外部依赖 · 已部署于 qsefthuko753951.github.io/TK</span>
+                    <button class="mini-btn" id="game-full">⛶ 全屏试玩</button>
+                    <button class="mini-btn" id="game-reload">↻ 重新开始</button>
+                    <button class="mini-btn" id="game-close">✕ 收起</button>
+                    <a class="mini-btn" href="https://qsefthuko753951.github.io/TK/" target="_blank" rel="noopener">↗ 独立窗口</a>
+                </div>
+            </div>
+
+            <div class="grid grid-3" style="margin-top:var(--sp-6)">
+                <div class="card reveal">
+                    <div class="eyebrow">技术要点</div>
+                    <h3>Canvas 渲染</h3>
+                    <p>帧循环、碰撞检测、精灵绘制全部手写，像素风格 image-rendering 保真。</p>
+                </div>
+                <div class="card reveal">
+                    <div class="eyebrow">系统设计</div>
+                    <h3>成长与随机</h3>
+                    <p>坦克进化、成就解锁、随机事件、无尽模式商店，构成可重复游玩的循环。</p>
+                </div>
+                <div class="card reveal">
+                    <div class="eyebrow">工程</div>
+                    <h3>单文件交付</h3>
+                    <p>123 KB 一个 HTML 文件搞定，双击即玩，也可直接托管到任意静态服务器。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div>© <span data-year>2026</span> 朱子康 · 完成比完美更重要</div>
+        <div><a href="contact.html">联系我</a> · <a href="#" onclick="window.print();return false;">导出 PDF</a></div>
+    </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/cursor-particles.js"></script>
+<script src="assets/js/smooth-scroll.js"></script>
+<script src="assets/js/games.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "首页", "item": "https://qsefthuko753951.github.io/ZK/" },
+    { "@type": "ListItem", "position": 2, "name": "坦克大战试玩", "item": "https://qsefthuko753951.github.io/ZK/games.html" }
+  ]
+}
+</script>
+</body>
+</html>

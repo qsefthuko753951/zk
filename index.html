@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>朱子康 · 个人作品集 | 集成电路 · AI 应用探索者</title>
+<meta name="description" content="朱子康的个人作品集：山东航空学院集成电路设计与集成系统专业，专注 AI 应用、视觉设计与内容创作，含项目作品、技能证书与互动小游戏。">
+<meta name="theme-color" content="#F1F1EB">
+<link rel="canonical" href="https://qsefthuko753951.github.io/ZK/">
+<link rel="icon" href="images/favicon.png" sizes="256x256">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="朱子康 · 个人作品集">
+<meta property="og:description" content="集成电路专业在读，专注 AI 应用、视觉设计与内容创作。">
+<meta property="og:url" content="https://qsefthuko753951.github.io/ZK/">
+<meta property="og:image" content="https://qsefthuko753951.github.io/ZK/images/robocon-01.webp">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+/* 主题预置：避免深色模式下的白屏闪烁 */
+(function(){ try { var t = localStorage.getItem('zk-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {} })();
+</script>
+</head>
+<body>
+
+<header class="site-nav">
+    <div class="nav-inner">
+        <a class="nav-brand" href="index.html"><span class="seal">朱</span>朱子康</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="打开导航菜单">☰</button>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html" class="is-active">首页</a>
+            <a href="about.html">关于</a>
+            <a href="skills.html">技能</a>
+            <a href="projects.html">项目</a>
+            <a href="games.html">游戏</a>
+            <a href="contact.html">联系</a>
+        </nav>
+        <button class="theme-toggle" aria-label="切换深色 / 浅色模式" title="切换主题">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"></path></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+        </button>
+    </div>
+</header>
+
+<main class="site-main">
+
+    <!-- ================= 首屏：水墨粒子 + 毛笔书写 ================= -->
+    <section class="hero">
+        <canvas id="ink-canvas" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+            <p class="hero-kicker">IDENTITY &nbsp;//&nbsp; FRESHMAN V1.0</p>
+            <h1 class="brush-name" data-text="朱子康">朱子康</h1>
+            <p class="hero-flog" data-text="完成比完美更重要"><span class="txt"></span></p>
+            <p class="hero-desc">山东航空学院 <strong>集成电路设计与集成系统</strong> 专业在读，是一个对 <strong>AI 应用</strong> 的探索者，志在将人工智能作为创作的延伸，追寻人机协同下的创意表达。</p>
+            <div class="hero-stats">
+                <div class="stat"><div class="num" data-count="3">0</div><div class="label">AI 项目落地</div></div>
+                <div class="stat"><div class="num" data-count="8">0</div><div class="label">技能认证</div></div>
+                <div class="stat"><div class="num" data-count="100">0</div><div class="label">完成度优先 %</div></div>
+            </div>
+        </div>
+        <div class="scroll-hint" role="button" tabindex="0" aria-label="向下滚动">
+            <span>SCROLL</span>
+            <span class="dot-line"></span>
+            <span class="ring"></span>
+        </div>
+    </section>
+
+    <!-- ================= 三个方向 ================= -->
+    <section data-snap class="section" id="next-screen">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="eyebrow">DIRECTIONS // 三个方向</div>
+                <h2>我在做的事<span class="dot">。</span></h2>
+            </div>
+            <div class="grid grid-3">
+                <a class="card card-link reveal" href="projects.html#ai">
+                    <div class="eyebrow">I / AI + 编程</div>
+                    <h3>AI 应用开发</h3>
+                    <p>从 Prompt 工程到 RAG 工作流，把大模型接进真实场景，让工具替我完成重复劳动。</p>
+                    <div class="chips"><span class="chip">Python</span><span class="chip">Prompt</span><span class="chip">智能体</span></div>
+                    <span class="go">查看项目 →</span>
+                </a>
+                <a class="card card-link reveal" href="projects.html#ppt">
+                    <div class="eyebrow">II / 视觉与设计</div>
+                    <h3>PPT 设计者</h3>
+                    <p>侧重复赛路演稿与信息图，用排版与视觉叙事把复杂内容讲清楚。</p>
+                    <div class="chips"><span class="chip">路演稿</span><span class="chip">视觉叙事</span><span class="chip">信息图</span></div>
+                    <span class="go">查看作品 →</span>
+                </a>
+                <a class="card card-link reveal" href="projects.html#media">
+                    <div class="eyebrow">III / 内容传播</div>
+                    <h3>自媒体创作</h3>
+                    <p>AI + 大学赛道，选题、文案、拍摄、剪辑全流程自己跑，正在起步中。</p>
+                    <div class="chips"><span class="chip">短视频</span><span class="chip">选题策划</span><span class="chip">运营</span></div>
+                    <span class="go">查看内容 →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 教育背景 ================= -->
+    <section class="section ink-reveal">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="eyebrow">ACADEMIC // 教育背景</div>
+                <h2>求学之路<span class="dot">。</span></h2>
+            </div>
+            <div class="card reveal">
+                <div class="grid grid-3">
+                    <div><div class="eyebrow">院校</div><h3>山东航空学院</h3></div>
+                    <div><div class="eyebrow">专业</div><h3>集成电路设计与集成系统</h3></div>
+                    <div><div class="eyebrow">阶段</div><h3>本科在读</h3></div>
+                </div>
+                <p style="margin-top:var(--sp-4)">从器件到设计的完整学科背景，正在把 AI 工具能力叠加到专业学习上。<a href="about.html">查看完整成长时间线 →</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= 成长轨迹预览 ================= -->
+    <section data-snap class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <div class="eyebrow">TIMELINE // 成长轨迹</div>
+                <h2>从零到能独立交付<span class="dot">。</span></h2>
+            </div>
+            <div class="timeline reveal">
+                <div class="tl-item">
+                    <div class="tl-date">2026.06</div>
+                    <h3>初遇 AI</h3>
+                    <p>高考结束，用人生第一份大模型写了第一首诗、第一个网站。一个被 AI 彻底改写方向的夏天。</p>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-date">2026.08</div>
+                    <h3>证书与技能栈成型</h3>
+                    <p>考取人工智能训练师（初/高级）双认证，完成 RAG、VISION AI 等专项认证。</p>
+                </div>
+                <div class="tl-item">
+                    <div class="tl-date">2026.09</div>
+                    <h3>现在：准大一 2.0</h3>
+                    <p>用这份作品集告诉未来的自己："完成比完美重要 100 倍"。下一阶段目标：做出能被别人用起来的东西。</p>
+                </div>
+            </div>
+            <p style="margin-top:var(--sp-4)"><a href="about.html">完整时间线与成就徽章 →</a></p>
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section data-snap class="section">
+        <div class="container">
+            <div class="card reveal" style="text-align:center;padding:var(--sp-7) var(--sp-5)">
+                <div class="eyebrow">NEXT // 下一步</div>
+                <h2 style="font-size:clamp(1.4rem,3vw,2rem)">想聊聊 AI、设计，或者一起做点东西？</h2>
+                <p>邮箱、微信、手机都在联系页，随时可以找到我。</p>
+                <a class="btn" href="contact.html">去联系我 →</a>
+                <a class="btn btn-ghost" href="projects.html" style="margin-left:var(--sp-2)">先看项目</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div>© <span data-year>2026</span> 朱子康 · 完成比完美更重要</div>
+        <div><a href="contact.html">联系我</a> · <a href="#" onclick="window.print();return false;">导出 PDF</a></div>
+    </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "朱子康",
+  "jobTitle": "学生 · AI 应用探索者",
+  "affiliation": { "@type": "CollegeOrUniversity", "name": "山东航空学院" },
+  "url": "https://qsefthuko753951.github.io/ZK/",
+  "knowsAbout": ["人工智能应用", "集成电路", "PPT 设计", "自媒体创作"]
+}
+</script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/site.js"></script>
+<script src="assets/js/cursor-particles.js"></script>
+<script src="assets/js/smooth-scroll.js"></script>
+<script src="assets/js/ink-canvas.js"></script>
+<script src="assets/js/home.js"></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "朱子康 · 个人作品集",
+  "url": "https://qsefthuko753951.github.io/ZK/",
+  "inLanguage": "zh-CN",
+  "author": { "@type": "Person", "name": "朱子康" }
+}
+</script>
+</body>
+</html>
